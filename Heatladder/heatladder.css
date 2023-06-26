@@ -1,0 +1,128 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.png');
+    background-size: 100%;
+  }
+
+  .logo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  #tableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the rounds horizontally */
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(45, 45, 45, 0.6));
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .round {
+    flex: 0 0 calc(18% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  table {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  table th:nth-child(1) {
+    border-radius: 5px 0 0 0;
+  }
+  
+  table th:nth-child(2) {
+    border-radius: 0 5px 0 0;
+  }
+  
+  td:nth-child(1) {
+    width: 75%;
+  }
+  
+  td:nth-child(2) {
+    text-align: right;
+    width: 25%;
+  }
+  
+  th {
+    text-align: left;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(45, 45, 45, 0.6));
+    color: #fff;
+    padding: 5px;
+  }
+  
+  tr td {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  tr:nth-child(1) td {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(255, 95, 0, 0.6));
+    color: #fff;
+  }
+
+  tr:nth-child(2) td {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(234, 234, 234, 0.6));
+  }
+
+  tr:nth-child(3) td {
+    background: linear-gradient(to right, rgba(0, 58, 255, 0.6), rgba(0, 162, 255, 0.6));
+    color: #fff;
+  }
+  
+  @keyframes backgroundScroll {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+h2 {
+  /* Existing CSS properties */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.round {
+  /* Existing CSS properties */
+  animation: scaleIn 1s ease-in-out;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

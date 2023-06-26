@@ -1,0 +1,122 @@
+{
+    "Round 1": [
+      {
+        "Heat 1": [
+          { "Seed": "Seed 1", "Score": 15 },
+          { "Seed": "Seed 7", "Score": 10 },
+          { "Seed": "Seed 13", "Score": 18 }
+        ]
+      },
+      {
+        "Heat 2": [
+          { "Seed": "Seed 2", "Score": 12 },
+          { "Seed": "Seed 8", "Score": 8 },
+          { "Seed": "Seed 14", "Score": 16 }
+        ]
+      },
+      {
+        "Heat 3": [
+          { "Seed": "Seed 3", "Score": 13 },
+          { "Seed": "Seed 9", "Score": 11 },
+          { "Seed": "Seed 15", "Score": 19 }
+        ]
+      },
+      {
+        "Heat 4": [
+          { "Seed": "Seed 4", "Score": 14 },
+          { "Seed": "Seed 10", "Score": 9 },
+          { "Seed": "Seed 16", "Score": 17 }
+        ]
+      },
+      {
+        "Heat 5": [
+          { "Seed": "Seed 5", "Score": 16 },
+          { "Seed": "Seed 11", "Score": 10 },
+          { "Seed": "Seed 17", "Score": 20 }
+        ]
+      },
+      {
+        "Heat 6": [
+          { "Seed": "Seed 6", "Score": 11 },
+          { "Seed": "Seed 12", "Score": 13 },
+          { "Seed": "Seed 18", "Score": 15 }
+        ]
+      }
+    ],
+    "Round 2": [
+      {
+        "Heat 7": [
+          { "Seed": "#3 Heat 3", "Score": 14 },
+          { "Seed": "#3 Heat 4", "Score": 16 }
+        ]
+      },
+      {
+        "Heat 8": [
+          { "Seed": "#3 Heat 1", "Score": 12 },
+          { "Seed": "#3 Heat 2", "Score": 18 }
+        ]
+      },
+      {
+        "Heat 9": [
+          { "Seed": "#3 Heat 5", "Score": 15 },
+          { "Seed": "#3 Heat 6", "Score": 13 }
+        ]
+      }
+    ],
+    "Quarter finals": [
+      {
+        "Heat 10": [
+          { "Seed": "#2 Heat 1", "Score": 16 },
+          { "Seed": "#2 Heat 2", "Score": 19 },
+          { "Seed": "#1 Heat 7", "Score": 18 }
+        ]
+      },
+      {
+        "Heat 11": [
+          { "Seed": "#2 Heat 3", "Score": 15 },
+          { "Seed": "#2 Heat 4", "Score": 17 },
+          { "Seed": "#1 Heat 9", "Score": 16 }
+        ]
+      },
+      {
+        "Heat 12": [
+          { "Seed": "#2 Heat 5", "Score": 20 },
+          { "Seed": "#2 Heat 6", "Score": 14 },
+          { "Seed": "#1 Heat 8", "Score": 17 }
+        ]
+      }
+    ],
+    "Semi finals": [
+      {
+        "Heat 13": [
+          { "Seed": "#1 Heat 5", "Score": 18 },
+          { "Seed": "#1 Heat 6", "Score": 20 },
+          { "Seed": "#1 Heat 10", "Score": 19 }
+        ]
+      },
+      {
+        "Heat 14": [
+          { "Seed": "#1 Heat 1", "Score": 17 },
+          { "Seed": "#1 Heat 2", "Score": 16 },
+          { "Seed": "#1 Heat 11", "Score": 15 }
+        ]
+      },
+      {
+        "Heat 15": [
+          { "Seed": "#1 Heat 3", "Score": 14 },
+          { "Seed": "#1 Heat 4", "Score": 13 },
+          { "Seed": "#1 Heat 12", "Score": 12 }
+        ]
+      }
+    ],
+    "Final": [
+      {
+        "Heat 16": [
+          { "Seed": "#1 Heat 13", "Score": 20 },
+          { "Seed": "#1 Heat 14", "Score": 19 },
+          { "Seed": "#1 Heat 15", "Score": 18 }
+        ]
+      }
+    ]
+  }
+  
