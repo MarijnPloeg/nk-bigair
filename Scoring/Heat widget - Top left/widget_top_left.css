@@ -1,57 +1,115 @@
 .widget-container {
-    width: 20%;
-    height: 30%;
-    padding-top: 20px;
-    padding-left: 20px;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(52, 52, 52, 0.6));
-    border-radius: 20px;
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-  }
-  
-  .logo {
-    width: 70%;
-    height: 15%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(52, 52, 52, 0.6));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .countdown {
-    width: 30%;
-    height: 10%;
-    background: linear-gradient(to right, #FF4141, #F86666);
-    border-radius: 5px;
-    margin-left: auto;
-  }
-  
-  .timer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px; /* Adjust the margin */
-  }
-  
-  .round-heat {
-    width: 70%;
-    height: 15%;
-    background-color: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(45, 45, 45, 0.6));
-    color: #fff;
-  }
-  
-  .rider-scores {
-    width: 100%;
-    height: 60%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(45, 45, 45, 0.6));
-    color: #fff;
-  }
-  
+  width: 20%;
+  height: 30%;
+  padding: 20px;
+  background: linear-gradient(to right, rgba(0, 0, 60, 0.75), rgba(26, 23, 52, 0.75), rgba(12, 12, 12, 0.75), rgba(24, 23, 51, 0.75));
+  border-radius: 20px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.sponsor-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 15%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(52, 52, 52, 0.6));
+  border-radius: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.countdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 30%;
+  background: linear-gradient(to right, #FF4141, #F86666);
+  border-radius: 0 20px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 35px;
+}
+
+.current-heat {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 70%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(34, 34, 34, 0.75));
+}
+
+.current-heat h1 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+}
+
+.round-heat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.round-heat h1 {
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+}
+
+.round-heat p {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+.scoring {
+  color: #fff;
+  margin-top: 20%;
+}
+
+#rankings {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px; /* Adjust the spacing as needed */
+}
+
+#rankings tr {
+  border-bottom: none;
+}
+
+#rankings td:nth-child(1) {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+#rankings td:nth-child(2) {
+  font-size: 30px;
+  text-align: left;
+}
+
+#rankings td:nth-child(3) {
+  font-size: 24px;
+  text-align: center;
+}
+
+#rankings tr:not(:last-child) {
+  border-bottom: none;
+}

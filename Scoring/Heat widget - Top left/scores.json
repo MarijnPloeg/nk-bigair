@@ -1,12 +1,31 @@
-{
-    "Round 1": [
-      {
-        "Heat 1": {
-          "Stijn Mul": [2.22, 2.53, 7.84, 2.62, 2.92],
-          "Joris Herrewijnen": [8.31, 7.51, 8.72, 9.12, 7.92],
-          "Jan Zoon": [7.43, 8.24, 6.92, 7.82, 8.12]
-        }
-      }
-    ]
+[
+  {
+      "heatname": "Heat 4",
+      "status": "stop",
+      "heattime": "10",
+      "heatstart": "1687427228000",
+      "heatend": "1687427828000",
+      "time": 1687975424000
+  },
+  {
+      "color": "#fcfb00",
+      "name": "Stijn Mul",
+      "s0": 2.8,
+      "s1": 5,
+      "totalscore": 7.8
+  },
+  {
+      "color": "#000000",
+      "name": "Joris Herrewijnen",
+      "s0": 3.88,
+      "s1": "-",
+      "totalscore": 3.88
+  },
+  {
+      "color": "#ff2600",
+      "name": "Jan Zoon",
+      "s0": 3.5,
+      "s1": "-",
+      "totalscore": 3.5
   }
-  
+]

@@ -2,54 +2,58 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('scores.json')
       .then(response => response.json())
       .then(data => {
+        displayHeat(data);
         displayRankings(data);
+        startCountdown();
       })
       .catch(error => {
-        console.error('Error fetching scores:', error);
+        console.error('Error fetching data:', error);
       });
   });
   
+  function displayHeat(data) {
+    const currentHeat = data[0].heatname;
+    const heatNameElement = document.getElementById('heat-name');
+    heatNameElement.textContent = currentHeat;
+  }
+  
   function displayRankings(data) {
     const rankingsContainer = document.getElementById('rankings');
+    rankingsContainer.innerHTML = '';
   
-    let rank = 1;
-    const riders = data['Round 1'][0]['Heat 1'];
+    const riders = data.slice(1); // Exclude the heat data
   
-    const riderScores = []; // Array to store rider scores
+    riders.sort((a, b) => b.totalscore - a.totalscore);
   
-    // Calculate total scores for each rider
-    for (const riderName in riders) {
-      const scores = riders[riderName];
-  
-      // Calculate total score (top two scores)
-      const totalScore = scores
-        .sort((a, b) => b - a) // Sort scores in descending order
-        .slice(0, 2) // Take the top two scores
-        .reduce((sum, score) => sum + score, 0); // Calculate sum
-  
-      riderScores.push({ name: riderName, score: totalScore });
-    }
-  
-    // Sort riders by total score in descending order
-    riderScores.sort((a, b) => b.score - a.score);
-  
-    // Display rankings and total scores
-    for (let i = 0; i < riderScores.length; i++) {
+    riders.forEach((rider, index) => {
       const row = document.createElement('tr');
-      const rankCell = document.createElement('td');
+      const positionCell = document.createElement('td');
       const nameCell = document.createElement('td');
       const scoreCell = document.createElement('td');
   
-      rankCell.textContent = rank;
-      nameCell.textContent = riderScores[i].name;
-      scoreCell.textContent = riderScores[i].score;
+      positionCell.textContent = index + 1;
+      nameCell.textContent = rider.name.split(' ').pop();
+      scoreCell.textContent = (index === 0) ? 'Leading' : rider.totalscore.toFixed(2);
   
-      row.appendChild(rankCell);
+      row.appendChild(positionCell);
       row.appendChild(nameCell);
       row.appendChild(scoreCell);
       rankingsContainer.appendChild(row);
-  
-      rank++;
-    }
+    });
   }
   
+  function startCountdown() {
+    let time = 30; // Countdown time in seconds
+  
+    const countdownElement = document.getElementById('countdown');
+  
+    const countdownInterval = setInterval(() => {
+      countdownElement.textContent = time.toFixed(0);
+      time--;
+  
+      if (time < 0) {
+        countdownElement.style.display = 'none'; // Hide the countdown element
+        clearInterval(countdownInterval); // Clear the countdown interval
+      }
+    }, 1000);
+  }
