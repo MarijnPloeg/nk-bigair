@@ -1,0 +1,69 @@
+#widget-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 20%;
+  padding: 20px;
+  margin: 50px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+#heat-scores {
+  background: linear-gradient(to right, rgba(0, 0, 60, 0.75), rgba(26, 23, 52, 0.75), rgba(12, 12, 12, 0.75), rgba(24, 23, 51, 0.75));
+  border-radius: 20px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.rider-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 25%;
+}
+
+.rider-icon {
+  width: 50px; /* Adjust the width as desired */
+  height: 50px; /* Adjust the height as desired */
+  border-radius: 50%;
+}
+
+.rider-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Adjust the margin as desired */
+  flex: 1 0 25%;
+}
+
+.rider-initials {
+  font-size: 14px; /* Adjust the font size as desired */
+}
+
+.trick-scores {
+  display: flex;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+.trick-scores .trick-score {
+  flex: 1;
+  text-align: center;
+  font-size: 16px; /* Adjust the font size as desired */
+  padding: 3px 6px;
+}
+
+.crash {
+  color: #ea4949;
+}
+
+.highlight-trick {
+  color: #78e36f;
+}
+
+.total-score {
+  text-align: right;
+  font-size: 16px; /* Adjust the font size as desired */
+}
