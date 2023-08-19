@@ -21,8 +21,9 @@
   background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(52, 52, 52, 0.6));
   border-radius: 20px 0 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  padding-left: 15px;
   color: #fff;
   font-size: 24px;
 }

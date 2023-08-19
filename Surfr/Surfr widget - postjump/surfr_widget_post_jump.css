@@ -1,0 +1,70 @@
+/* Style for the widget container */
+.widgetContainer {
+  position: fixed;
+  bottom: 12%;
+  right: 7%;
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(2, 139, 158, 0.5);
+  overflow: hidden; /* Ensure content doesn't overflow */
+  background-color: rgba(50, 50, 50, 0.75); /* Dark grey background with opacity */
+  font-family: 'Rubik', sans-serif; /* Apply Rubik font */
+}
+
+h2 {
+  position: fixed;
+  bottom: 22%;
+  right: 150px;
+  font-family: 'Rubik', sans-serif; /* Apply Rubik font */
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Pseudo-element for the blue bar */
+.widgetContainer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 4px; /* Height of the blue bar */
+  background-color: #00BCD7; /* Blue color */
+}
+
+/* Data container */
+.dataContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 8px;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Text styling */
+span {
+  font-size: 34px; /* Set font size to 18px */
+  color: white;
+  font-weight: bold;
+}
+
+/* Rider name at the bottom center */
+.riderName {
+  font-size: 24px; /* Set font size to 18px */
+  text-align: center;
+  color: white;
+  font-family: 'Rubik', sans-serif; /* Apply Rubik font */
+  font-weight: bold;
+}
+
+.heightLabel,
+.distanceLabel {
+  font-size: 18px;
+  align-items: center;
+}
